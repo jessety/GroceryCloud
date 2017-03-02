@@ -8,20 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		888CE1691E6778CE00B51916 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888CE1681E6778CE00B51916 /* AppDelegate.swift */; };
-		888CE16B1E6778CE00B51916 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888CE16A1E6778CE00B51916 /* ViewController.swift */; };
-		888CE16E1E6778CE00B51916 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 888CE16C1E6778CE00B51916 /* Main.storyboard */; };
 		888CE1701E6778CE00B51916 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 888CE16F1E6778CE00B51916 /* Assets.xcassets */; };
 		888CE1731E6778CE00B51916 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 888CE1711E6778CE00B51916 /* LaunchScreen.storyboard */; };
+		888CE17F1E67795D00B51916 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888CE17B1E67795D00B51916 /* ViewController.swift */; };
+		888CE1801E67795D00B51916 /* GroceryListManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888CE17C1E67795D00B51916 /* GroceryListManager.swift */; };
+		888CE1811E67795D00B51916 /* GroceryListDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888CE17D1E67795D00B51916 /* GroceryListDocument.swift */; };
+		888CE1821E67795D00B51916 /* GroceryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888CE17E1E67795D00B51916 /* GroceryItem.swift */; };
+		888CE1841E67798000B51916 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 888CE1831E67798000B51916 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		888CE1651E6778CE00B51916 /* GroceryCloud.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GroceryCloud.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		888CE1681E6778CE00B51916 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		888CE16A1E6778CE00B51916 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		888CE16D1E6778CE00B51916 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		888CE16F1E6778CE00B51916 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		888CE1721E6778CE00B51916 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		888CE1741E6778CE00B51916 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		888CE17A1E67791400B51916 /* GroceryCloud.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GroceryCloud.entitlements; sourceTree = "<group>"; };
+		888CE17B1E67795D00B51916 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		888CE17C1E67795D00B51916 /* GroceryListManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroceryListManager.swift; sourceTree = "<group>"; };
+		888CE17D1E67795D00B51916 /* GroceryListDocument.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroceryListDocument.swift; sourceTree = "<group>"; };
+		888CE17E1E67795D00B51916 /* GroceryItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroceryItem.swift; sourceTree = "<group>"; };
+		888CE1831E67798000B51916 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,9 +61,13 @@
 		888CE1671E6778CE00B51916 /* GroceryCloud */ = {
 			isa = PBXGroup;
 			children = (
+				888CE17A1E67791400B51916 /* GroceryCloud.entitlements */,
 				888CE1681E6778CE00B51916 /* AppDelegate.swift */,
-				888CE16A1E6778CE00B51916 /* ViewController.swift */,
-				888CE16C1E6778CE00B51916 /* Main.storyboard */,
+				888CE17B1E67795D00B51916 /* ViewController.swift */,
+				888CE17C1E67795D00B51916 /* GroceryListManager.swift */,
+				888CE17D1E67795D00B51916 /* GroceryListDocument.swift */,
+				888CE17E1E67795D00B51916 /* GroceryItem.swift */,
+				888CE1831E67798000B51916 /* Main.storyboard */,
 				888CE16F1E6778CE00B51916 /* Assets.xcassets */,
 				888CE1711E6778CE00B51916 /* LaunchScreen.storyboard */,
 				888CE1741E6778CE00B51916 /* Info.plist */,
@@ -98,6 +109,11 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 9YFN5M9VM9;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -124,9 +140,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				888CE1841E67798000B51916 /* Main.storyboard in Resources */,
 				888CE1731E6778CE00B51916 /* LaunchScreen.storyboard in Resources */,
 				888CE1701E6778CE00B51916 /* Assets.xcassets in Resources */,
-				888CE16E1E6778CE00B51916 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,7 +153,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				888CE16B1E6778CE00B51916 /* ViewController.swift in Sources */,
+				888CE1801E67795D00B51916 /* GroceryListManager.swift in Sources */,
+				888CE17F1E67795D00B51916 /* ViewController.swift in Sources */,
+				888CE1811E67795D00B51916 /* GroceryListDocument.swift in Sources */,
+				888CE1821E67795D00B51916 /* GroceryItem.swift in Sources */,
 				888CE1691E6778CE00B51916 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -145,14 +164,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		888CE16C1E6778CE00B51916 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				888CE16D1E6778CE00B51916 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		888CE1711E6778CE00B51916 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -261,8 +272,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = GroceryCloud/GroceryCloud.entitlements;
 				DEVELOPMENT_TEAM = 9YFN5M9VM9;
 				INFOPLIST_FILE = GroceryCloud/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jesseyoungblood.GroceryCloud;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -274,8 +287,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = GroceryCloud/GroceryCloud.entitlements;
 				DEVELOPMENT_TEAM = 9YFN5M9VM9;
 				INFOPLIST_FILE = GroceryCloud/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jesseyoungblood.GroceryCloud;
 				PRODUCT_NAME = "$(TARGET_NAME)";
