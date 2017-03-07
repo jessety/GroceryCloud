@@ -24,6 +24,10 @@ class GroceryItem: NSObject, NSSecureCoding {
     
     /// The category this grocery item falls into. Optional.
     var category: GroceryCategory?
+    
+    
+    /// Whether the user has "checked off" this item or not
+    var completed: Bool = false
 
     /// Initializes a new GroceryItem with the specified name
     ///
@@ -44,6 +48,8 @@ class GroceryItem: NSObject, NSSecureCoding {
         
         aCoder.encode(name, forKey: "name")
         
+        aCoder.encode(completed, forKey: "completed")
+        
         if category != nil {
             aCoder.encode(self.category!.rawValue, forKey: "category")
         }
@@ -55,6 +61,8 @@ class GroceryItem: NSObject, NSSecureCoding {
     required public init(coder: NSCoder) {
         
         name = coder.decodeObject(of: NSString.self, forKey: "name") as! String
+        
+        completed = coder.decodeBool(forKey: "completed")
         
         category = GroceryCategory.init(rawValue: coder.decodeInteger(forKey: "category"))
     }

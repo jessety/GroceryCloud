@@ -15,6 +15,7 @@
 		888CE1811E67795D00B51916 /* GroceryListDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888CE17D1E67795D00B51916 /* GroceryListDocument.swift */; };
 		888CE1821E67795D00B51916 /* GroceryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888CE17E1E67795D00B51916 /* GroceryItem.swift */; };
 		888CE1841E67798000B51916 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 888CE1831E67798000B51916 /* Main.storyboard */; };
+		888CE1861E68C96F00B51916 /* GroceryItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888CE1851E68C96F00B51916 /* GroceryItemCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		888CE17D1E67795D00B51916 /* GroceryListDocument.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroceryListDocument.swift; sourceTree = "<group>"; };
 		888CE17E1E67795D00B51916 /* GroceryItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroceryItem.swift; sourceTree = "<group>"; };
 		888CE1831E67798000B51916 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		888CE1851E68C96F00B51916 /* GroceryItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroceryItemCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +65,7 @@
 			children = (
 				888CE17A1E67791400B51916 /* GroceryCloud.entitlements */,
 				888CE1681E6778CE00B51916 /* AppDelegate.swift */,
-				888CE17B1E67795D00B51916 /* ViewController.swift */,
+				888CE1871E68C97800B51916 /* UI */,
 				888CE17C1E67795D00B51916 /* GroceryListManager.swift */,
 				888CE17D1E67795D00B51916 /* GroceryListDocument.swift */,
 				888CE17E1E67795D00B51916 /* GroceryItem.swift */,
@@ -73,6 +75,15 @@
 				888CE1741E6778CE00B51916 /* Info.plist */,
 			);
 			path = GroceryCloud;
+			sourceTree = "<group>";
+		};
+		888CE1871E68C97800B51916 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				888CE17B1E67795D00B51916 /* ViewController.swift */,
+				888CE1851E68C96F00B51916 /* GroceryItemCell.swift */,
+			);
+			name = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,6 +168,7 @@
 				888CE17F1E67795D00B51916 /* ViewController.swift in Sources */,
 				888CE1811E67795D00B51916 /* GroceryListDocument.swift in Sources */,
 				888CE1821E67795D00B51916 /* GroceryItem.swift in Sources */,
+				888CE1861E68C96F00B51916 /* GroceryItemCell.swift in Sources */,
 				888CE1691E6778CE00B51916 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -317,6 +329,7 @@
 				888CE1791E6778CE00B51916 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

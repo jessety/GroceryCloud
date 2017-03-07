@@ -186,15 +186,11 @@ class ViewController: UITableViewController, GroceryListManagerDelegate {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let identifier = "reuse";
+        let identifier = "item"
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: identifier) ?? UITableViewCell(style: .subtitle, reuseIdentifier: identifier)
+        let cell = tableView.dequeueReusableCell(withIdentifier: identifier) as? GroceryItemCell ?? GroceryItemCell(style: .subtitle, reuseIdentifier: identifier)
         
-        cell.textLabel?.text = ""
-        
-        let item = listManager.items[indexPath.row]
-        
-        cell.textLabel?.text = item.name
+        cell.item = listManager.items[indexPath.row]
         
         return cell
     }
@@ -242,6 +238,25 @@ class ViewController: UITableViewController, GroceryListManagerDelegate {
 
         return true
     }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        tableView.deselectRow(at: indexPath, animated: false)
+        
+        guard let cell = tableView.cellForRow(at: indexPath) as? GroceryItemCell else {
+            return
+        }
+        
+        let item = listManager.items[indexPath.row]
+        
+        item.completed = !item.completed
+        
+        cell.item = item
+        
+        // Re-serialize the list
+        listManager.save(nil)
+    }
+
  
     // MARK: - GroceryListManagerDelegate
 
