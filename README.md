@@ -5,3 +5,9 @@ This sample grocery app uses iCloud document storage to sync across all of a use
 There are a lot of reasons not to rely on iCloud for your app. If you ever plan to expand your app to the web or Android or add any manner for your users to interact with each other, this probably is not the correct route to go down.
 
 However, retaining some information across all of a user's devices even if the app is deleted and re-installed can be exceptionally convenient.
+
+<img src="http://i.imgur.com/wlsxlKd.png" width="250">
+
+<img src="http://i.imgur.com/rF4xAx2.png" width="250">
+
+<img src="http://i.imgur.com/1XOXKqL.png" width="250">
